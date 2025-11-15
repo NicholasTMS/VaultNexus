@@ -61,10 +61,5 @@ public class PlatformAccount {
         this.linkedAt = LocalDateTime.now();
     }
 
-    // Optional helper for relationship
-    public void addGame(Game game) {
-        games.add(game);
-        game.setPlatformAccount(this);
-    }
 }
 

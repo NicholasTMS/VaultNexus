@@ -56,9 +56,4 @@ public class Game {
     @OneToMany(mappedBy = "game", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Achievement> achievements = new ArrayList<>();
 
-    // Helper for relationship
-    public void addAchievement(Achievement achievement) {
-        achievements.add(achievement);
-        achievement.setGame(this);
-    }
 }
