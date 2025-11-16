@@ -5,6 +5,8 @@ import com.kallavaninc.vaultnexus.DTO.AchievementDTO.AchievementResponseDTO;
 import com.kallavaninc.vaultnexus.entity.Achievement;
 import com.kallavaninc.vaultnexus.entity.Game;
 import com.kallavaninc.vaultnexus.mapper.AchievementMapper;
+import com.kallavaninc.vaultnexus.repository.AchievementRepository;
+import com.kallavaninc.vaultnexus.repository.GameRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -4,6 +4,7 @@ import com.kallavaninc.vaultnexus.DTO.UserDTO.UserRequestDTO;
 import com.kallavaninc.vaultnexus.DTO.UserDTO.UserResponseDTO;
 import com.kallavaninc.vaultnexus.entity.User;
 import com.kallavaninc.vaultnexus.mapper.UserMapper;
+import com.kallavaninc.vaultnexus.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

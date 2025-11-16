@@ -5,6 +5,8 @@ import com.kallavaninc.vaultnexus.DTO.PlatformAccountDTO.PlatformAccountResponse
 import com.kallavaninc.vaultnexus.entity.PlatformAccount;
 import com.kallavaninc.vaultnexus.entity.User;
 import com.kallavaninc.vaultnexus.mapper.PlatformAccountMapper;
+import com.kallavaninc.vaultnexus.repository.PlatformAccountRepository;
+import com.kallavaninc.vaultnexus.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
