@@ -2,6 +2,7 @@ package com.kallavaninc.vaultnexus.controller;
 
 import com.kallavaninc.vaultnexus.DTO.GameDTO.GameRequestDTO;
 import com.kallavaninc.vaultnexus.DTO.GameDTO.GameResponseDTO;
+import com.kallavaninc.vaultnexus.service.GameDataService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

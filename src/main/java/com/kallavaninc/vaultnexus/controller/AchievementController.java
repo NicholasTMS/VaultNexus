@@ -2,6 +2,7 @@ package com.kallavaninc.vaultnexus.controller;
 
 import com.kallavaninc.vaultnexus.DTO.AchievementDTO.AchievementRequestDTO;
 import com.kallavaninc.vaultnexus.DTO.AchievementDTO.AchievementResponseDTO;
+import com.kallavaninc.vaultnexus.service.AchievementService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
