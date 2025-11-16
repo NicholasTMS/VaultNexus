@@ -1,6 +1,6 @@
 package com.kallavaninc.vaultnexus.mapper;
-import com.kallavaninc.vaultnexus.DTO.AchievementRequestDTO;
-import com.kallavaninc.vaultnexus.DTO.AchievementResponseDTO;
+import com.kallavaninc.vaultnexus.DTO.AchievementDTO.AchievementRequestDTO;
+import com.kallavaninc.vaultnexus.DTO.AchievementDTO.AchievementResponseDTO;
 import com.kallavaninc.vaultnexus.entity.Achievement;
 import org.mapstruct.Mapper;
 

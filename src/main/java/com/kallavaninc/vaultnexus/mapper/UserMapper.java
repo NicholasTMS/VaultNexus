@@ -1,6 +1,6 @@
 package com.kallavaninc.vaultnexus.mapper;
-import com.kallavaninc.vaultnexus.DTO.UserRequestDTO;
-import com.kallavaninc.vaultnexus.DTO.UserResponseDTO;
+import com.kallavaninc.vaultnexus.DTO.UserDTO.UserRequestDTO;
+import com.kallavaninc.vaultnexus.DTO.UserDTO.UserResponseDTO;
 import com.kallavaninc.vaultnexus.entity.User;
 import org.mapstruct.Mapper;
 

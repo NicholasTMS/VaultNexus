@@ -1,6 +1,6 @@
 package com.kallavaninc.vaultnexus.mapper;
-import com.kallavaninc.vaultnexus.DTO.GameRequestDTO;
-import com.kallavaninc.vaultnexus.DTO.GameResponseDTO;
+import com.kallavaninc.vaultnexus.DTO.GameDTO.GameRequestDTO;
+import com.kallavaninc.vaultnexus.DTO.GameDTO.GameResponseDTO;
 import com.kallavaninc.vaultnexus.entity.Game;
 import org.mapstruct.Mapper;
 

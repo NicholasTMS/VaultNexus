@@ -1,4 +1,5 @@
-package com.kallavaninc.vaultnexus.DTO;
+package com.kallavaninc.vaultnexus.DTO.GameDTO;
+import com.kallavaninc.vaultnexus.DTO.AchievementDTO.AchievementResponseDTO;
 import lombok.Getter;
 import lombok.Setter;
 

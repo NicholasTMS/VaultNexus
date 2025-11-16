@@ -1,7 +1,7 @@
 package com.kallavaninc.vaultnexus.controller;
 
-import com.kallavaninc.vaultnexus.DTO.PlatformAccountRequestDTO;
-import com.kallavaninc.vaultnexus.DTO.PlatformAccountResponseDTO;
+import com.kallavaninc.vaultnexus.DTO.PlatformAccountDTO.PlatformAccountRequestDTO;
+import com.kallavaninc.vaultnexus.DTO.PlatformAccountDTO.PlatformAccountResponseDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

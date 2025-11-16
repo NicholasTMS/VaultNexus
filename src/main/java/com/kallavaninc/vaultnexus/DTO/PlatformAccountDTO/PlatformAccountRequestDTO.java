@@ -1,4 +1,4 @@
-package com.kallavaninc.vaultnexus.DTO;
+package com.kallavaninc.vaultnexus.DTO.PlatformAccountDTO;
 import lombok.Getter;
 import lombok.Setter;
 

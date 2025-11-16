@@ -1,7 +1,7 @@
 package com.kallavaninc.vaultnexus.controller;
 
-import com.kallavaninc.vaultnexus.DTO.UserRequestDTO;
-import com.kallavaninc.vaultnexus.DTO.UserResponseDTO;
+import com.kallavaninc.vaultnexus.DTO.UserDTO.UserRequestDTO;
+import com.kallavaninc.vaultnexus.DTO.UserDTO.UserResponseDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
