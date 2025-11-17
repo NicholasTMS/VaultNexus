@@ -23,7 +23,7 @@ public class User {
 
     private String username;
     private String email;
-    private String passwordHash;
+    private String password;
 
     @Setter(AccessLevel.NONE)
     @Column(name = "created_at", nullable = false, updatable = false)
@@ -35,10 +35,10 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<PlatformAccount> platformAccounts = new ArrayList<>();
 
-    public User(String username, String email, String passwordHash) {
+    public User(String username, String email, String password) {
         this.username = username;
         this.email = email;
-        this.passwordHash = passwordHash;
+        this.password = password;
     }
 
     @PrePersist //method runs automatically just before the entity is first persisted (inserted) into the database.

@@ -60,6 +60,5 @@ public class PlatformAccount {
     protected void onLink() {
         this.linkedAt = LocalDateTime.now();
     }
-
 }
 
