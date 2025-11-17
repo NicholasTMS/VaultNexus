@@ -2,13 +2,12 @@ package com.kallavaninc.vaultnexus.mapper;
 import com.kallavaninc.vaultnexus.DTO.GameDTO.GameRequestDTO;
 import com.kallavaninc.vaultnexus.DTO.GameDTO.GameResponseDTO;
 import com.kallavaninc.vaultnexus.entity.Game;
-import org.mapstruct.Mapper;
+import org.springframework.stereotype.Component;
 
-@Mapper(componentModel = "spring", uses = AchievementMapper.class)
-// This tells MapStruct to automap ur dto below into a Spring-managed implementation (e.g. UserMapperImpl) at compile time.
-// The generated mapper will be a singleton Spring bean, so you can @Autowired it in your services.
-public interface GameMapper {
-    Game toEntity(GameRequestDTO dto);
 
-    GameResponseDTO toResponseDto(Game game);
+@Component
+public class GameMapper {
+    public Game toEntity(GameRequestDTO dto){ return new Game();};
+
+    public GameResponseDTO toResponseDto(Game game){ return new GameResponseDTO();};
 }

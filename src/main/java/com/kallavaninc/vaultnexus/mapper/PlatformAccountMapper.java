@@ -2,12 +2,11 @@ package com.kallavaninc.vaultnexus.mapper;
 import com.kallavaninc.vaultnexus.DTO.PlatformAccountDTO.PlatformAccountRequestDTO;
 import com.kallavaninc.vaultnexus.DTO.PlatformAccountDTO.PlatformAccountResponseDTO;
 import com.kallavaninc.vaultnexus.entity.PlatformAccount;
-import org.mapstruct.Mapper;
+import org.springframework.stereotype.Component;
 
-@Mapper(componentModel = "spring")
-// This tells MapStruct to automap ur dto below into a Spring-managed implementation (e.g. UserMapperImpl) at compile time.
-// The generated mapper will be a singleton Spring bean, so you can @Autowired it in your services.
-public interface PlatformAccountMapper {
-    PlatformAccount toEntity(PlatformAccountRequestDTO dto);
-    PlatformAccountResponseDTO toResponseDto(PlatformAccount entity);
+
+@Component
+public class PlatformAccountMapper {
+    public PlatformAccount toEntity(PlatformAccountRequestDTO dto){ return new PlatformAccount();};
+    public PlatformAccountResponseDTO toResponseDto(PlatformAccount entity){return new PlatformAccountResponseDTO();};
 }
