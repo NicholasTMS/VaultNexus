@@ -27,8 +27,7 @@
         <url/>
     </scm>
     <properties>
-        <java.version>21</java.version>
-        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -56,29 +55,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- MapStruct runtime -->
+
+        <!-- Lombok -->
         <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct</artifactId>
-            <version>${mapstruct.version}</version>
-        </dependency>
-
-        <!-- Lombok (only if you use it) -->
-
-        <dependency>
-          <groupId>org.projectlombok</groupId>
-          <artifactId>lombok</artifactId>
-          <version>${lombok.version}</version>
-          <scope>provided</scope>
-        </dependency>
-
-        <!-- Optional: lombok-mapstruct-binding if using Lombok + MapStruct -->
-
-        <dependency>
-          <groupId>org.projectlombok</groupId>
-          <artifactId>lombok-mapstruct-binding</artifactId>
-          <version>0.2.0</version>
-          <scope>compile</scope>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
@@ -88,24 +70,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
-
-                    <!-- Ensure annotation processors run (MapStruct + Lombok) -->
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>${mapstruct.version}</version>
-                        </path>
-                        <path>
-                          <groupId>org.projectlombok</groupId>
-                          <artifactId>lombok</artifactId>
-                          <version>${lombok.version}</version>
-                        </path>
-
-                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
 
@@ -118,3 +86,4 @@
     </build>
 
 </project>
+
