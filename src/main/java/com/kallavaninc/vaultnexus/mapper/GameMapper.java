@@ -6,11 +6,13 @@ import com.kallavaninc.vaultnexus.DTO.GameDTO.GameResponseDTO;
 import com.kallavaninc.vaultnexus.entity.Game;
 import com.kallavaninc.vaultnexus.entity.PlatformAccount;
 import com.kallavaninc.vaultnexus.repository.PlatformAccountRepository;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Component
 public class GameMapper {
 
     private final PlatformAccountRepository platformAccountRepository;

@@ -3,7 +3,9 @@ package com.kallavaninc.vaultnexus.mapper;
 import com.kallavaninc.vaultnexus.DTO.AchievementDTO.AchievementRequestDTO;
 import com.kallavaninc.vaultnexus.DTO.AchievementDTO.AchievementResponseDTO;
 import com.kallavaninc.vaultnexus.entity.Achievement;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AchievementMapper {
     private Boolean unlocked;          // wrapper, can be null
 
